@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Application</title>
+
+    <!--Poppins font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/a3266b2c61.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <header class="header_container">
+        <h1 class="header_container__title title">ToDo Application</h1>
+        <p class="header_container__description description">Już nigdy nie zapomnisz o ważnych rzeczach!</p>
+    </header>
+    <main>
+        <div class="todo_container">
+            <div class="todo_container__header">
+                <h2 class="todo_container__header--title title">ToDo List</h2>
+                <div class="todo_container__header_addToDo">
+                    <input type="text" class="input" placeholder="Wpisz treść zadania"> <button
+                        class="todo_container__header--button">Dodaj
+                        Zadanie</button>
+                </div>
+            </div>
+            <div class="todo_container__toDoList">
+                <h3 class="todo_container__toDoList--title title">Lista zadań</h3>
+                <p class="error">Brak zadań na liście</p>
+                <ul class="todoList">
+                    <!-- <li class="todoList_element">Wypic kawe
+                        <div class="tools">
+                            <button class="complete tools_button"><i class="fa-solid fa-check"></i></button>
+                            <button class="edit tools_button">EDIT</button>
+                            <button class="delete tools_button"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                    </li>
+                    <li class="todoList_element">Nauczyc sie na testy
+                        <div class="tools">
+                            <button class="complete tools_button"><i class="fa-solid fa-check"></i></button>
+                            <button class="edit tools_button">EDIT</button>
+                            <button class="delete tools_button"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                    </li>
+                    <li class="todoList_element">Dokonczyc strone
+                        <div class="tools">
+                            <button class="complete tools_button"><i class="fa-solid fa-check"></i></button>
+                            <button class="edit tools_button">EDIT</button>
+                            <button class="delete tools_button"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="popup">
+            <h3>Edytuj zadanie:</h3>
+            <div class="popup-body">
+                <p class="popup-info"></p>
+                <input type="text" class="popup-input input" placeholder="Wprowadź nową treść zadania">
+                <button class="popup-btn accept">Zatwierdź</button>
+                <button class="popup-btn cancel">Anuluj</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
